@@ -1,4 +1,4 @@
-%h2 成果物一覧
+%h2 作ったもの一覧
 
 %table.table.table-striped.table-hover
   %thead
@@ -8,7 +8,9 @@
   %tbody
     %tr
       %td= link_to "シューティングゲーム", "https://www.youtube.com/watch?v=m1FQUBi3At8", :target => "blank"
-      %td jQueryを用いて作成したもの。youtubeに成果物を投稿
+      %td
+        jQueryを用いて作成したもの。youtubeにプレイ動画を投稿
+        /= image_tag "shooting.gif", :width => 50, :height => 50
     %tr
       %td= link_to "githubアカウント", "https://github.com/InvokeTwoA", :target => "blank"
       %td ここにあるソースは全てgithubに登録済み

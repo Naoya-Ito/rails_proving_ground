@@ -45,6 +45,9 @@ gem 'nokogiri', '1.6.0'
 gem 'jquery-rails'
 gem 'jquery-colorbox-rails'
 
+group :production do
+    gem 'rails_12factor'
+end
 
 group :doc do
   gem 'sdoc', require: false

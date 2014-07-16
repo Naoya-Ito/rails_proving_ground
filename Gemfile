@@ -23,9 +23,14 @@ gem 'kaminari'
 #gem 'activerecord-import'
 #gem 'rabl'
 #gem 'rest-client'
+
+#gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+
 gem "therubyracer"
-gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'less-rails'
+gem 'twitter-bootswatch-rails'
+gem 'twitter-bootswatch-rails-helpers'
+
 #gem "fog"
 #gem 'client_side_validations'
 #gem 'jpmobile'
@@ -45,8 +50,6 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :development, :test do
-end
 group :development, :test do
   gem 'rspec'
   gem 'rspec-rails'

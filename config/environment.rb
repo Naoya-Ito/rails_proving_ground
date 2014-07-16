@@ -5,4 +5,9 @@ require File.expand_path('../application', __FILE__)
 RailsProvingGround::Application.initialize!
 
 
+RailsProvingGround::Application.configure do
+  config.assets.precompile += %w(cosmo.css cosmo.js)
+
+
+end
 

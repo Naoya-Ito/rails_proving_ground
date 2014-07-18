@@ -2,7 +2,7 @@
 %h1 社内の悪を暴くツール
 
 %form{:method => "get", :action => "/bunseki"}
-  %input.form-control#name{:type => "text", :placeholder => "名前を入力してください", :name => "name"}
+  %input.form-control#name{:type => "text", :placeholder => "名前を入力してください", :name => "name", :value => @name}
 
 
 -if @name.present?

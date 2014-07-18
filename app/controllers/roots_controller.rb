@@ -17,6 +17,7 @@ class RootsController < ApplicationController
       number = Digest::MD5.new.update(@name).to_s.to_i(16)
       while true
         per = (nokori < 10) ? nokori : number % (nokori + 1)
+        per = 1 if per == 0
         per_list.push per
         @seibun_list.push seibun_key[number%(seibun_key.length)].chomp
         seibun_key.delete_at(number%(seibun_key.length))

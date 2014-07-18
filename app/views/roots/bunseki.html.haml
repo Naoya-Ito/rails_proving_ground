@@ -1,0 +1,17 @@
+= javascript_include_tag "bunseki"
+%h1 社内の悪を暴くツール
+
+%form{:method => "get", :action => "/bunseki"}
+  %input.form-control#name{:type => "text", :placeholder => "名前を入力してください", :name => "name"}
+
+
+-if @name.present?
+  .bs-docs-section
+    .row
+      .col-lg-4.col-lg-offset-1
+        %table.table.table-striped.table-hover{:width => "50%"}
+          - @per_list.each_with_index do |per, i|
+            %tr
+              %td #{@name}の#{per}%は「#{@seibun_list[i]}」です
+      .col-lg-7
+        = high_chart("#{@name}の脳内", @chart)

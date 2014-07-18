@@ -91,11 +91,6 @@ end
 
 group :development do
   gem 'better_errors'
-  gem 'staticman'
-end
-
-group :development do
-  gem 'better_errors'
 end
 
 # gem 'bcrypt-ruby', '~> 3.1.2'
@@ -112,3 +107,8 @@ gem 'omniauth-google-oauth2'
 gem 'omniauth-google'
 gem 'omniauth-openid'
 =end
+
+# seibun/  graph
+gem 'lazy_high_charts'
+
+

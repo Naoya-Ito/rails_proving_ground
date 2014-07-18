@@ -6,8 +6,6 @@ RailsProvingGround::Application.initialize!
 
 
 RailsProvingGround::Application.configure do
-  config.assets.precompile += %w(cosmo.css cosmo.js)
-
-
+  config.assets.precompile += %w(cosmo.css cosmo.js bunseki.js)
 end
 

@@ -1,0 +1,283 @@
+= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+
+.fallback-message
+  %p
+    ブラウザ対応してないっす (´；ω；｀)
+  %p
+    立ち去るが良い
+#impress
+  #title1.step.slide.active.present{data: {scale: 1, x:4000, y:0, "rotate-x" => -240, "rotate-y" => -90}}
+    %h2 大手Web系IT企業の働き方
+    .content
+      %br
+      %p{style: "text-align: center; padding: 10px"}
+        = image_tag '/images/top_building.jpg'
+      %br
+        
+  #step-1.step.slide.active.present{data: {x:-4000, y:-2000, "rotate-x" => 75, "rotate-y" => 75, scale: 1}}
+    %h2 発表の流れ
+    .content
+      %ul
+        %li 自己紹介+経歴
+        %li 大企業の作業の進め方
+        %li 大企業のメリット
+        %li 大企業のデメリット
+        %li ベンチャー企業の作業の進め方
+        %li ベンチャー企業のメリット
+        %li ベンチャー企業のデメリット
+        %li まとめ
+
+  / 全体のスライドが見える
+  #overview.step{data: {x:"3000", y:"1500", scale:"14"}}
+
+  / z: 8000 layer
+  #step-o1.step.slide.active.present{data: {scale: 1, x:2000, y:2000, z:8000}}
+    %h2 2006/9 - 2011/9　Yahoo入社
+    .content
+      = image_tag '/images/logo/y_logo.jpg', width: 170, height: 130
+      %h3 志望動機
+      %ul
+        %li 色々できそう
+        %li やっぱ大手は安心
+        %li HP作成とか好きだったのでwebエンジニア志望
+
+  #step-o2.step.slide.active.present{data: {scale: 1, x:4000, y:2000, z:8000, "rotate-y" => 90}}
+    .content
+      .top
+        大手企業のメリット
+      %br
+      %br
+      大手企業はどんなところ？
+
+  #step-o2-1.step.slide.active.present{data: {scale: 1, x:6000, y:2000, z:8000, "rotate-y" => 90}}
+    .content
+      .top
+        人が多い
+      %br
+      %div{style: 'text-align: center'}
+        = image_tag '/images/people.jpg', width: 320, height: 250
+      %br
+      %ul
+        %li 天才が多い
+        %li 社内技術が非常に充実
+        %li 多くの人と出会える
+
+  #step-o2-2.step.slide.active.present{data: {scale: 1, x:8000, y:2000, z:8000, "rotate-y" => 90}}
+    .content
+      .top
+        大きく綺麗なオフィス
+      %br
+      %div{style: 'text-align: center'}
+        = image_tag '/images/building.jpg', width: 100, height: 150
+      %br
+      %ul
+        %li 充実した設備（最新のテスト端末、サーバー）
+
+  #step-o2-3.step.slide.active.present{data: {scale: 1, x:10000, y:2000, z:8000, "rotate-y" => 90}}
+    %h2 大企業のメリット
+    .content
+      %ul
+        %li PVなど全ての数値が圧倒的
+        %li 事業部が沢山。社内で転職みたいなこともできる
+        %li マニュアル豊富(後述)
+        %li 研修制度などしっかりしてる
+
+  #step-o3.step.slide.active.present{data: {scale: 1, x:0, y:000, z:8000, "rotate-y" => 180}}
+    .content
+      .top 大企業の仕事の進め方
+    %br
+    %br
+    %br
+    大手とベンチャーでは仕事の進め方も全然違う
+
+  #step-o4.step.slide.active.present{data: {scale: 1, x:0, y:2000, z:8000, "rotate-y" => 180}}
+    %h2 仕事の進め方
+    .content
+      %ul
+        %li 
+          最優先すべきは
+          %span.text-red
+            品質
+          。
+          %br
+          webページが数分表示できないだけで何百万の損失
+        %li 分業制(企画、開発、制作、CS、運用)
+        %li 
+          完全な
+          = link_to 'ウォーターフォール・モデル', 'http://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%95%E3%82%A9%E3%83%BC%E3%83%AB%E3%83%BB%E3%83%A2%E3%83%87%E3%83%AB', target: "_blank"
+      %p{style: "text-align: center;"}
+        = image_tag '/images/shounin.jpg'
+
+  #step-o5.step.slide.active.present{data: {scale: 1, x:-4000, y:4000, z:10000, "rotate-y" => 270}}
+    %h3 新サービス企画書の例
+
+    %div{style: 'border:#000000 solid 1px; padding: 15px'}
+      %ul
+        %li キャッチコピー
+        %li ターゲットのユーザー層
+        %li 自サービスの強み
+        %li サービス内容
+        %li 競合との差別化
+        %li 作業コストの見積もり
+    %br
+    こういったテンプレートが洗練され尽くしてる。
+    %br
+    一個でも条件を満たさなければ行動はできない。
+    %br
+    %br
+    便利と感じるか面倒と感じるかは人次第
+
+  #step-o6.step.slide.active.present{data: {scale: 1, x:0000, y:4000, z:10000, "rotate-y" => 0}}
+    .content
+      .top
+        大企業のデメリット
+
+  #step-o7-1.step.slide.active.present{data: {scale: 1, x:2000, y:12000, z:10000, "rotate-y" => 90}}
+    %h2 大企業のデメリット
+    .content
+      .top 人が多すぎること
+      %br
+      %br
+      %ul
+        %li 人が多い → 競争率が高い。埋没する人はする
+        %li 怠ける人は怠ける
+        %li 巨大すぎて組織の全体像の把握が難しい
+
+  #step-o7-2.step.slide.active.present{data: {scale: 1, x:4000, y:12000, z:10000, "rotate-y" => 180}}
+    %h2 大企業のデメリット
+    .content
+      %ul
+        %li ルールが非常に多い（事故再発防止策）
+        %li スピード感がない（品質 > スピード）
+        %li チャレンジがしにくい（ローリスク推奨）
+        %li 社内技術に慣れすぎると社外で通用しなくなる
+
+  / 5000 layer
+  #step-w0.step.slide.active.present{data: {scale: 1, x:2000, y:8000, z:5000}}
+    .content
+      .top
+        ベンチャー企業の場合
+
+
+  / 5000 layer
+  #step-w1.step.slide.active.present{data: {scale: 1, x:2000, y:5000, z:5000}}
+    %h2 ベンチャー企業での仕事の進め方
+    .content
+      %ul
+        %li
+          = link_to "アジャイル開発",  "http://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%B8%E3%83%A3%E3%82%A4%E3%83%AB%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA", target: "_blank"
+          = link_to "https://www.google.co.jp/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=%E3%82%A2%E3%82%B8%E3%83%A3%E3%82%A4%E3%83%AB%20%E6%84%8F%E5%91%B3", target: "_blank" do
+            /= image_tag "/images/cat.png"
+            。
+        %li 最小人数のチーム構成
+        %li 現場判断が多い
+        %br
+        %br
+        %br
+        = image_tag "/images/genba.jpg", width: 500, height: 260
+                                                    
+  / 0 layer
+  #step-w2.step.slide.active.present{data: {scale: 1, x:4000, y:5000}}
+    .top
+      ベンチャー企業のメリット
+
+  / 0 layer
+  #step-w3.step.slide.active.present{data: {scale: 1, x:4000, y:7000}}
+    %h2 ベンチャー企業のメリット
+    .content
+      %ul
+        %li 個人の裁量が大きい
+        %li スピード感がある(ルール等が少ない)
+        %li チャレンジがしやすい。評価される
+        %li お金の動きや数値のリアルさを知れる
+        %li 会社の成長性(変化)に期待できる。一攫千金
+        %li 偉い人とも直接議論できる
+
+  #step-w4.step.slide.active.present{data: {scale: 1, x:4000, y:9000}}
+    .top
+      ベンチャー企業のメリット
+
+  #step-w5.step.slide.active.present{data: {scale: 1, x:6000, y:12000}}
+    %h2 デメリット
+    .content
+      %ul
+        %li
+          倒産のリスク。
+          %span.text-red 赤字
+          により会社の雰囲気が変わる
+        %li マニュアルなどない
+        %li ルールや研修なども少ない
+        %li 人が少ない
+      /%p{style: "text-align: right;"}
+      /  = image_tag "/images/ghost.png", width: 64, height: 64
+
+  /#step-g1.step.slide.active.present{data: {scale: 1, x:1000, y:3000}}
+  /#step-x1.step.slide.active.present{data: {scale: 1, x:1000, y:4000}}
+  /#step-x2.step.slide.active.present{data: {scale: 1, x:2000, y:4000, z:-1000, "rotate-y" => 90}}
+  /#step-x3.step.slide.active.present{data: {scale: 1, x:1000, y:4000, z:-2000, "rotate-y" => 180}}
+  /#step-x4.step.slide.active.present{data: {scale: 1, x:0, y:4000, z:-1000, "rotate-y" => 270}}
+ 
+  #step-matome1.step.slide.active.present{data: {scale: 1, x:0, y:5000, z:3000, "rotate-y" => 90}}
+    %h2 それぞれの特徴まとめ
+    .content
+      %table.table.table-striped.table-hover
+        %tr
+          %th 
+          %th 大企業
+          %th ベンチャー企業
+        %tr
+          %td 品質
+          %td 高い
+          %td 優先度は低め
+        %tr
+          %td スピード感
+          %td 遅い
+          %td 速い
+        %tr
+          %td 会社の安定性
+          %td 潰れはしない
+          %td 変化は激しい
+
+  /#step-dev1-0.step.slide.active.present{data: {scale: 1, x:0, y:-1000, z:-1000, "rotate-x" => "270", "rotate-y" => "180"}}
+  /#step-dev1-1.step.slide.active.present{data: {scale: 1, x:0, y:-1000, z:-2000, "rotate-x" => "270", "rotate-y" => "180"}}
+  /#step-dev1-2.step.slide.active.present{data: {scale: 1, x:0, y:-1000, z:-3000, "rotate-x" => "270", "rotate-y" => "180"}}
+  /#step-dev1-3.step.slide.active.present{data: {scale: 1, x:0, y:-1000, z:-4000, "rotate-x" => "270", "rotate-y" => "180"}}
+  /#step-dev2-1.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-8000, "rotate-x" => "180", "rotate-y" => "90"}}
+  /#step-dev2-2.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-7000, "rotate-x" => "180", "rotate-y" => "90"}}
+  /#step-dev2-3.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-6000, "rotate-x" => "180", "rotate-y" => "90"}}
+  /#step-dev2-4.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-5000, "rotate-x" => "180", "rotate-y" => "90"}}
+  /#step-dev2-5.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-4000, "rotate-x" => "180", "rotate-y" => "90"}}
+  /#step-dev2-6.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-3000, "rotate-x" => "180", "rotate-y" => "90"}}
+  /#step-dev2-7.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-2000, "rotate-x" => "180", "rotate-y" => "90"}}
+  /#step-dev2-8.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-1000, "rotate-x" => "180", "rotate-y" => "90"}}
+  /#step-dev3-1.step.slide.active.present{data: {scale: 1, x:2000, y:-3000, z:-2000, "rotate-x" => "180", "rotate-y" => "180"}}
+  /#step-dev3-2.step.slide.active.present{data: {scale: 1, x:2000, y:-3000, z:-3000, "rotate-x" => "180", "rotate-y" => "180"}}
+  /#step-dev3-3.step.slide.active.present{data: {scale: 1, x:2000, y:-3000, z:-4000, "rotate-x" => "180", "rotate-y" => "180"}}
+  /#step-dev4-1.step.slide.active.present{data: {scale: 1, x:2000, y:-4000, z:-3000, "rotate-x" => "180", "rotate-y" => "270"}}
+  /#step-dev4-2.step.slide.active.present{data: {scale: 1, x:2000, y:-4000, z:-2000, "rotate-x" => "180", "rotate-y" => "270"}}
+  /#step-dev4-3.step.slide.active.present{data: {scale: 1, x:2000, y:-4000, z:-1000, "rotate-x" => "180", "rotate-y" => "270"}}
+  /#step-dev5-1.step.slide.active.present{data: {scale: 1, x:2000, y:-5000, z:-1000, "rotate-x" => "180", "rotate-y" => "270"}}
+  /#step-dev5-2.step.slide.active.present{data: {scale: 1, x:2000, y:-5000, z:-2000, "rotate-x" => "180", "rotate-y" => "270"}}
+  /#step-dev6-1.step.slide.active.present{data: {scale: 1, x:2000, y:-6000, z:-1000, "rotate-x" => "180", "rotate-y" => "270"}}
+  /#step-dev6-2.step.slide.active.present{data: {scale: 1, x:2000, y:-6000, z:-2000, "rotate-x" => "180", "rotate-y" => "270"}}
+
+  #step-dev6-3.step.slide.active.present{data: {scale: 1, x:2000, y:-6000, z:-3000, "rotate-x" => "180", "rotate-y" => "270"}}
+    %h2 結論
+    .content
+      %ul
+        %li 大手とベンチャー、どちらが良いという事はない
+        %li 自分にあった企業形態を選んでください
+      %table.table.table-striped.table-hover
+        %tr
+          %th.center 品質を取るか、スピードを取るか
+        %tr
+          %th.center ルールを選ぶか、自由を選ぶか
+        %tr
+          %th.center 安定を望むか、変化を望むか
+      
+  #step-dev6-4.step.slide.active.present{data: {scale: 5, x:0, y:-2000, z:4000, "rotate-z" => "90", "rotate-x" => '70'}}
+    %h2 おしまい
+
+= javascript_include_tag "impress.js"
+:javascript
+  impress().init();

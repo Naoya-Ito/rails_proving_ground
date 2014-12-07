@@ -7,6 +7,14 @@
       %th 備考
   %tbody
     %tr
+      %td= link_to "グループインタビュー発表資料", work_path
+      %td
+        大企業のメリデメ
+    %tr
+      %td= link_to "勉強会資料", study_path
+      %td
+        今まで経験した３社それぞれでのPJの進め方。
+    %tr
       %td= link_to "iOSゲーム　『戦場の勇者』", "https://itunes.apple.com/jp/app/zhan-changno-yong-zhe/id913443123?mt=8", :target => "blank"
       %td
         objective-c, sprintkit で実装。ファミコン『戦場の狼』が好きだったので作ったけど全然別物になった。
@@ -17,7 +25,7 @@
         ※外部ページなので別ウィンドウ
         /= image_tag "shooting.gif", :width => 50, :height => 50
     %tr
-      %td= link_to "会社の悪を暴くツール", "bunseki"
+      %td= link_to "会社の悪を暴くツール", bunseki_path
       %td
         前職で遊びで作ったもの。railsで作成。グラフはhighcharts-railsで作成
     %tr
@@ -25,8 +33,8 @@
       %td
         ここにあるソースは全てgithubに登録済み
         ※外部ページなので別ウィンドウ
-    %tr
-      %td= link_to "技術ブログ", "http://invoketwoa.hatenablog.com/", :target => "blank"
-      %td
-        自分用のメモ
-        ※外部ページなので別ウィンドウ
+    /%tr
+    /  %td= link_to "技術ブログ", "http://invoketwoa.hatenablog.com/", :target => "blank"
+    /  %td
+    /    自分用のメモ。基本的にゴミ情報しかない。
+    /    ※外部ページなので別ウィンドウ

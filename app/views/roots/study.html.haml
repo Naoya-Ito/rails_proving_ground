@@ -1,0 +1,631 @@
+= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+
+.fallback-message
+  %p
+    ブラウザ対応してないっす (´；ω；｀)
+  %p
+    立ち去るが良い
+#impress
+  #title1.step.slide.active.present{data: {scale: 1, x:4000, y:0, "rotate-x" => -240, "rotate-y" => -90}}
+    %h2 アプリ開発から学ぶいろんなPJの進め方
+    .content
+      %br
+      %br
+      %br
+      %p{style: "text-align: center; padding: 10px"}
+        = image_tag '/images/slime0.png', width: 64, height: 64
+        = image_tag '/images/slime1.png', width: 64, height: 64
+      %br
+      %br
+      %br
+      %br
+  #step-1.step.slide.active.present{data: {x:-4000, y:-2000, "rotate-x" => 75, "rotate-y" => 75, scale: 1}}
+    %h2 発表の流れ
+    .content
+      %ul
+        %li 自己紹介+経歴
+        %li 各企業におけるのPJの進め方
+        %li スマホアプリ開発の例
+        %li まとめ
+      %p{style: "text-align: right; padding: 10px"}
+        = image_tag '/images/cat.png', width: 64, height: 64
+
+  #overview.step{data: {x:"3000", y:"1500", scale:"10"}}
+    / 全体のスライドが見える
+
+  #step-o1.step.slide.active.present{data: {scale: 1, x:1000, y:1000}}
+    %h2 2006/9 - 2011/9　とある大手企業
+    .content
+      %h3.text-blue 志望動機
+      %ul
+        %li 色々できそう（やりたい事が不明確だった）
+        %li 大手の安心感、ネームバリュー
+        %li HP作成とか好きだったのでwebエンジニア志望
+
+  #step-o2.step.slide.active.present{data: {scale: 1, x:2000, y:1000, z:-1000, "rotate-y" => 90}}
+    %h2 良かったところ
+    .content
+      %ul
+        %li オフィス綺麗
+        %li PVなど全ての数値が圧倒的
+        %li 社内技術が非常に充実
+        %li phpとmysqlを学べた
+        %li 自社フレームワーク担当できた
+        %li 全社で使うshortURL担当できた
+
+  #step-o3.step.slide.active.present{data: {scale: 1, x:1000, y:1000, z:-2000, "rotate-y" => 180}}
+    %h2 不満だったところ
+    .content
+      %ul
+        %li 人多すぎた
+        %li 
+          完全な
+          = link_to 'ウォーターフォール・モデル', 'http://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%95%E3%82%A9%E3%83%BC%E3%83%AB%E3%83%BB%E3%83%A2%E3%83%87%E3%83%AB', target: "_blank"
+        %li 個人の裁量が低い(企画、開発、制作、CS)
+        %li ( ˘ω˘) ｽﾔｧ
+        %li チャラい
+      %p{style: "text-align: right;"}
+        = image_tag '/images/slime1.png', width: 64, height: 64
+
+  #step-o4.step.slide.active.present{data: {scale: 1, x:0, y:1000, z:-2000, "rotate-y" => 180}}
+    %h2 超不満だったところ
+    .content
+      %ul
+        %li 
+          .text-red
+            障害発生時のペナルティが大きい
+          %br
+          %table.table.table-striped.table-hover
+            %tr
+              %td.center 障害発生 ＼(^o^)／
+            %tr
+              %td.center ↓
+            %tr
+              %td.center 応急処置（土下座） (´；ω；｀)
+            %tr
+              %td.center ↓
+            %tr
+              %td.center 再発防止計画書の作成。影響範囲などの調査
+            %tr
+              %td.center ↓
+            %tr
+              %td.center 事業部全体の責任(ボーナスにも影響)
+        リリースしたくなくなる
+
+  #step-o5.step.slide.active.present{data: {scale: 1, x:-1000, y:1000, z:-1000, "rotate-y" => 270}}
+    %h2 そして転職へ
+    .content
+      %h3.text-red 転職まで５年もかかった理由
+      %ul
+        %li 転職に関する漠然とした不安
+        %li 社内で事業部異動してた
+        %li 明確なきっかけが見つからなかった
+        %li コミュ障
+      %p{style: "text-align: right;"}
+        = image_tag "/images/skelton0.png"
+
+  #step-w1.step.slide.active.present{data: {scale: 1, x:1000, y:2000}}
+    %h2 2011/10 - 2014/8 とある中小  ＼(^o^)／
+    .content
+      %h3.text-blue 入った理由
+      %ul
+        %li 社長のキャラ
+        %li 事業内容
+        %li 社会貢献度が高そうだった
+      %br
+                                                    
+  #step-w2.step.slide.active.present{data: {scale: 1, x:2000, y:2000}}
+    %h2 良かったとこ
+    .content
+      %ul
+        %li
+          = link_to "アジャイル開発",  "http://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%B8%E3%83%A3%E3%82%A4%E3%83%AB%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA", target: "_blank"
+          = link_to "https://www.google.co.jp/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=%E3%82%A2%E3%82%B8%E3%83%A3%E3%82%A4%E3%83%AB%20%E6%84%8F%E5%91%B3", target: "_blank" do
+            = image_tag "/images/cat.png"
+        %li Railsを思想から勉強できた
+        %li アプリ開発に携われた(objective-c)
+        %li 少人数でサービス作る経験
+        %li 企画やUIについて意見を出せた
+        %li MTGでタイムキーパーがいて時間管理が凄かった
+        %li 運用フローとか素敵だった
+
+  #step-w3.step.slide.active.present{data: {scale: 1, x:3000, y:2000}}
+    %h2 不満だった点
+    .content
+      %ul
+        %li 風水 (謎すぎる席順。大安リリース)
+        %li 宣伝一切なし → 個人サイトと変わらん
+        %li 最後に関わった外人向けサービスが退屈だった
+        %li.text-red 赤字
+      %p{style: "text-align: right;"}
+        = image_tag "/images/ghost.png", width: 64, height: 64
+      %br
+      一度転職を経験したのでフットワークが軽くなってた
+      %br
+      %br
+      → 3年で転職
+
+  #step-g1.step.slide.active.present{data: {scale: 1, x:1000, y:3000}}
+    %h2 2014/9 - いま　とあるベンチャー
+    .content
+      %ul
+        %li 楽しくやってます
+        %li 転職は素晴らしい事なのでバンバン進めたいです
+
+  #step-x1.step.slide.active.present{data: {scale: 1, x:1000, y:4000}}
+    %h2 2010/4 - いま　小説家（副業）
+    .content
+      %h3.text-blue 良かったこと
+      %ul
+        %li 他業界を知る事でIT業界をより知る事ができた
+        %li 仕事スキルはエンジニアにも活かせる事が多い
+
+  #step-x2.step.slide.active.present{data: {scale: 1, x:2000, y:4000, z:-1000, "rotate-y" => 90}}
+    %h2 作業工程とか一緒
+    .content
+      %table.table.table-striped.table-hover
+        %tr
+          %td.center
+            プロット作成（
+            %span.text-red 企画書or設計
+            ）
+        %tr
+          %td.center ↓
+        %tr
+          %td.center
+            執筆（
+            %span.text-red 開発
+            ）
+        %tr
+          %td.center ↓
+        %tr
+          %td.center
+            推敲（
+            %span.text-red テスト
+            ）
+        %tr
+          %td.center ↓
+        %tr
+          %td.center
+            宣伝、その他イベント
+
+  #step-x3.step.slide.active.present{data: {scale: 1, x:1000, y:4000, z:-2000, "rotate-y" => 180}}
+    %h2 ノウハウも一緒(小説執筆の場合)
+    .content
+      %table.table.table-striped.table-hover
+        %tr
+          %td 冒頭は強い”引き”があること
+        %tr
+          %td 中盤はダレないこと。終盤に向けて伏線を貼る。
+        %tr
+          %td クライマックスで感動が生まれること
+        %tr
+          %td 全体を通してテーマが一貫していること
+        %tr
+          %td 他の作品にない売りがあること
+
+  #step-x4.step.slide.active.present{data: {scale: 1, x:0, y:4000, z:-1000, "rotate-y" => 270}}
+    %h2 ノウハウも一緒(webサービスの場合)
+    .content
+      %table.table.table-striped.table-hover
+        %tr
+          %td TOPページなりキャッチコピーに求心力が必要
+        %tr
+          %td ユーザーがゴールに達するまで離脱しない仕組みが必要
+        %tr
+          %td ゴールに達した時にユーザーの満足感が得られること
+        %tr
+          %td サービスコンセプトにブレがないこと
+        %tr
+          %td 競合サービスとの差別化ができていること
+ 
+  #step-matome1.step.slide.active.present{data: {scale: 1, x:0, y:5000, z:0}}
+    %h2 それぞれの特徴まとめ
+    .content
+      %table.table.table-striped.table-hover
+        %tr
+          %th 大手
+          %td 大手企業。ウォーターフォール。
+        %tr
+          %td 中小
+          %td アジャイル開発。利益より新技術。
+        %tr
+          %td いま
+          %td ベンチャー。スピード感、利益が大事。
+        %tr
+          %td 小説
+          %td 受託。webと違い成果物は修正不可。
+        %tr
+          %td 個人開発
+          %td 作業プロセスの満足感を優先。
+
+  #step-dev1-0.step.slide.active.present{data: {scale: 1, x:0, y:-1000, z:-1000, "rotate-x" => "270", "rotate-y" => "180"}}
+    %h1 これより本編。スマホ開発を例に取ります
+    .content
+      .center
+        = image_tag '/images/gameStart.png', width: 320, height: 470
+        %br
+        %br
+        本編だけど力尽きたので残り少ないです
+
+  #step-dev1-1.step.slide.active.present{data: {scale: 1, x:0, y:-1000, z:-2000, "rotate-x" => "270", "rotate-y" => "180"}}
+    %h2 まずは企画フェイズ
+    .content
+      %table.table.table-striped.table-hover
+        %tr
+          %td 大手
+          %td 
+            綿密な企画書の提出が必須
+            %span.text-red
+              (後述)
+            %br
+            各フェイズの様々な承認が必要
+        %tr
+          %td 中小
+          %td 役員の言ったものを意味不明でも作る
+        %tr
+          %td いま
+          %td
+            議論して決める。
+            %br
+            細部に関しては担当者の裁量が大きい
+        %tr
+          %td 小説
+          %td
+            担当さんを納得させるプロットが必要
+            %span.text-red
+              (後述)
+            %br
+            （売れない場合）指示されたものを書く
+        %tr
+          %td 個人
+          %td めんどいから書かぬ
+
+  #step-dev1-2.step.slide.active.present{data: {scale: 1, x:0, y:-1000, z:-3000, "rotate-x" => "270", "rotate-y" => "180"}}
+    %h3 企画書の例(ヤフー、小説)
+    %ul
+      %li まずキャッチコピー
+      %li ターゲットのユーザー層
+      %li 自サービスの強み
+      %li サービス内容（あらすじ、登場人物）
+      %li 競合との差別化
+      %li 作業コストの見積もり
+    %br
+    %br
+    毎週30没くらいの経験　→　簡潔さが大事
+    %br
+    %br
+    説得資料なので読む人を意識するのが大事
+
+  #step-dev1-3.step.slide.active.present{data: {scale: 1, x:0, y:-1000, z:-4000, "rotate-x" => "270", "rotate-y" => "180"}}
+    %h3 今回の場合
+    .content
+      %ul
+        %li
+          キャッチコピー
+          %br
+          %span.text-blue なんかアプリ作りたい。RPGとか
+        %li 
+          ターゲットのユーザー層
+          %br
+          %span.text-blue 知り合いにしか見せん
+        %li 
+          自社、ユーザー、それぞれのメリット
+          %br
+          %span.text-blue 俺の技術力が上がる。友人には酒の肴
+        %li 
+          競合との差別化
+          %br
+          %span.text-blue そんなものない。むしろパクリ
+        %li
+          作業コストの見積もり
+          %br
+          %span.text-blue ２週間後に新会社が始まるのでそれまでにやる
+          %br
+          %br
+          .text-red ↑良くない例。何も見積もってない
+
+  #step-dev2-1.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-8000, "rotate-x" => "180", "rotate-y" => "90"}}
+    %h2 設計フェイズ　言語は何にするか？
+    .content
+      .text-blue
+        中小（＾ω＾）「誰も経験してないswiftでやって」
+      %br
+      %br
+      →やだ。今回は作業スピード優先の為、開発コストは少なくしたい
+      %br
+      %br
+      .text-red
+        大手「クロスプラットフォームでやってくれない?」
+      %br
+      %br
+      → Androidなど知らん。検証機ないし
+      %br
+      %br
+      (結論)
+      %br
+      慣れてる objective-c でチャチャッと作っちゃおう
+
+  #step-dev2-2.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-7000, "rotate-x" => "180", "rotate-y" => "90"}}
+    %h2 フレームワークを使うべきかどうか
+    .content
+      初めての
+      = link_to 'フレームワーク', "http://ja.wikipedia.org/wiki/%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF", target: "_blank"
+      は学習コストがかかる。
+      %br
+      %br
+      (ﾟﾍﾟ) うーん
+      %br
+      %br
+      %br
+      判断材料 → 一番面倒な実装部分で判断しよう
+
+
+  #step-dev2-3.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-6000, "rotate-x" => "180", "rotate-y" => "90"}}
+    %h2 画像の衝突判定とは？
+    .content
+      マリオの例：クリボーやブロックと当たったかどうか？
+      %br
+      %table
+        %tr
+          %td{style: "vertical-align: bottom"}
+            = image_tag "/images/slime1.png", width:128, height:128
+          %td{style: "vertical-align:bottom"}
+            = image_tag "/images/bigCat.png", width:410, height:380, style: "position: relative; left: 50px;"
+      %br
+      スライムは巨大ネコを飛び越せるか否か？
+
+  #step-dev2-4.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-5000, "rotate-x" => "180", "rotate-y" => "90"}}
+    %h2 画像の衝突判定とは？
+    .content
+      うおりゃー！
+      %br
+      %span{style: 'text-align:center'}
+        = image_tag "/images/slime1.png", width:128, height:128, style: "position: relative; top: -95px; left: 95px;"
+        = image_tag "/images/bigCat.png", width:410, height:380, style: "position: relative; left: 50px;"
+      %br
+      良い感じに飛び越すように見えるが
+
+  #step-dev2-5.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-4000, "rotate-x" => "180", "rotate-y" => "90"}}
+    %h2 画像の衝突判定とは？
+    .content
+      突然の死!!!
+      %br
+
+      %span{style: 'text-align:center'}
+        = image_tag "/images/dead.png", width: 96, height: 96, style: "position: relative; top: -95px; left: 95px;"
+        = image_tag "/images/bigCat.png", width:410, height:380, style: "position: relative; left: 50px;"
+      %br
+      理不尽な失敗　＝　ユーザーの評価が下がる
+
+  #step-dev2-6.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-3000, "rotate-x" => "180", "rotate-y" => "90"}}
+    %h2 どうしてこうなった？
+    .content
+      画像は四角同士で判定している
+      %br
+      %span{style: 'text-align:center'}
+        = image_tag "/images/slime0.png", width: 96, height: 96, style: "position: relative; top: -95px; left: 95px;", class: "img_border"
+        = image_tag "/images/bigCat.png", width:410, height:380, style: "position: relative; left: 50px;", class: "img_border"
+      %br
+      %code{style: "font-size:50%"}
+        if ( (catX <= slimeX + slimeWidth && slimeX < catX + catWidth) && 
+        %br
+        　　(catY <= slimeY + slimeHeight && slimeY < catY + catHeight) ) { hit(); }
+
+  #step-dev2-7.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-2000, "rotate-x" => "180", "rotate-y" => "90"}}
+    %h2 
+      対策
+      = image_tag "/images/goldCat.png", width: 64, height: 64
+    .content
+      %table.table.table-striped.table-hover
+        %tr
+          %td 大手
+          %td
+            詳細な衝突判定は専用チームに任せてしまう。
+            %br
+            ポリゴンとかやってくれたりする。
+        %tr
+          %td 中小
+          %td
+            工夫で対応する。
+            %ul
+              %li
+                = link_to "円同士で衝突判定", "https://www.google.co.jp/search?q=%E5%86%86%E5%90%8C%E5%A3%AB%E3%81%AE%E5%BD%93%E3%81%9F%E3%82%8A%E5%88%A4%E5%AE%9A&espv=2&biw=1422&bih=704&source=lnms&tbm=isch&sa=X&ei=thOPVKPbK4ONmwXh04HgDw&ved=0CAkQ_AUoBA", target: "_blank"
+                してみた方が楽かも。
+              %li
+                画像を四角っぽくするとか？
+              %li
+                判定を甘くする。ライフゲージを用いるとか（誤摩化し）。
+        %tr
+          %td 小説
+          %td ネコは周りにオーラを発してるという設定にする。
+    
+  #step-dev2-8.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-1000, "rotate-x" => "180", "rotate-y" => "90"}}
+    %h2 結論
+    .content
+      衝突判定とかしたくないのでフレームワーク(
+      = link_to "spriteKit", "http://spritekit.senchan-office.com/index.php/collision", target: "_blank"
+      )を使おう
+
+  #step-dev3-1.step.slide.active.present{data: {scale: 1, x:2000, y:-3000, z:-2000, "rotate-x" => "180", "rotate-y" => "180"}}
+    %h2 そして開発(あんまし書くことない)
+    .content
+      %table.table.table-striped.table-hover
+        %tr
+          %td.center spriteKit の性能を試すのが楽しい
+        %tr
+          %td.center ↓
+        %tr
+          %td.center 色々試したい!
+        %tr
+          %td.center ↓
+        %tr
+          %td 気がつけばRPG -> アクションゲームになってた
+      %br
+      %ul
+        %li 作るものがぶれる(ゴールが動くため永遠に終わらない)。
+        %li.text-red 目的と手段が入れ替わってしまう
+
+  #step-dev3-2.step.slide.active.present{data: {scale: 1, x:2000, y:-3000, z:-3000, "rotate-x" => "180", "rotate-y" => "180"}}
+    %h2 ライブ感を許すかどうか？
+    .content
+      %table.table.table-striped.table-hover
+        %tr
+          %td.center 大手
+          %td.center 絶対ダメ。承認やり直し
+        %tr
+          %td.center 中小
+          %td.center 納期守るなら不問
+        %tr
+          %td.center いま
+          %td.center その場で相談できる
+        %tr
+          %td.center 小説
+          %td.center ライブ感こそ大事。キャラ動いてる
+
+  #step-dev3-3.step.slide.active.present{data: {scale: 1, x:2000, y:-3000, z:-4000, "rotate-x" => "180", "rotate-y" => "180"}}
+    %h2 その他やってて困ったこと
+    .content
+      納期が近づく　→ 理想と妥協、どちらを取るか
+      %br
+      %br
+      .text-blue
+        画像は使い回し(妥協)。
+      %br
+      = image_tag "/images/slime0.png", width: 64, height: 64
+      = image_tag "/images/greenSlime0.png", width: 64, height: 64
+      = image_tag "/images/cat.png", width: 64, height: 64
+      = image_tag "/images/goldCat.png", width: 64, height: 64
+      = image_tag "/images/ghost.png", width: 64, height: 64
+      = image_tag "/images/blueGhost.png", width: 64, height: 64
+      %br
+      %br
+      途中から
+      = link_to 'フリー素材', "http://piposozai.wiki.fc2.com/wiki/%E3%83%9E%E3%83%83%E3%83%97%E3%83%81%E3%83%83%E3%83%97", target: "_blank"
+      に手を出す(外注による不統一性)。
+      %br
+      = image_tag "/images/golem.png"
+      = image_tag "/images/hiroin.png"
+      %br
+      %br
+      未完の傑作よりも完結した駄作
+
+  #step-dev4-1.step.slide.active.present{data: {scale: 1, x:2000, y:-4000, z:-3000, "rotate-x" => "180", "rotate-y" => "270"}}
+    %h2 しんどいテスト
+    .content
+      アプリのテストは超めんどい
+      %ul
+        %li 各端末のサイズで動くか？
+        %li 各OSで動くか？
+        %li メモリリークしてない？
+        %li プレイの自由度＝テストの難しさ
+
+  #step-dev4-2.step.slide.active.present{data: {scale: 1, x:2000, y:-4000, z:-2000, "rotate-x" => "180", "rotate-y" => "270"}}
+    %h2 綿密なテストを行う会社
+    .content
+      %table.table.table-striped.table-hover
+        %tr
+          %td 大手
+          %td
+            専用テスターに全て任せる
+            %br
+            （しかし初回はテスト仕様書作成が必要）
+        %tr
+          %td 小説
+          %td 『下読み』さんや『校正』さんに頼む
+      .text-red
+        リリース後は気軽に修正できないため、テストは超厳密
+
+  #step-dev4-3.step.slide.active.present{data: {scale: 1, x:2000, y:-4000, z:-1000, "rotate-x" => "180", "rotate-y" => "270"}}
+    %h2 テスト < 修正スピードな会社
+    .content
+      %table.table.table-striped.table-hover
+        %tr
+          %td 中小
+          %td いま
+        %tr
+          %td{colspan: 2} 修正スピードが早い。自動テスト
+      .text-red
+        リリース後も気軽に修正できるため、開発速度を優先
+
+  #step-dev5-1.step.slide.active.present{data: {scale: 1, x:2000, y:-5000, z:-1000, "rotate-x" => "180", "rotate-y" => "270"}}
+    %h2 そしてリリース
+    .content
+      %table.table.table-striped.table-hover
+        %tr
+          %td.center リリースしたぞー ＼(^o^)／
+        %tr
+          %td.center ↓
+        %tr
+          %td.center 障害報告、改善要望、etc
+        %tr
+          %td.center ↓
+        %tr
+          %td.center リリースは終わりではなく始まりだった
+
+  #step-dev5-2.step.slide.active.present{data: {scale: 1, x:2000, y:-5000, z:-2000, "rotate-x" => "180", "rotate-y" => "270"}}
+    %h2 リリース後の問題
+    .content
+      %table.table.table-striped.table-hover
+        %tr
+          %td iOS7登場
+          %td apple純正フレームワークでも死亡
+        %tr
+          %td apple審査
+          %td リジェクトされた悲しみ
+        %tr
+          %td iphone4で動かん
+          %td サポート対象外とはやりおる
+
+  #step-dev6-1.step.slide.active.present{data: {scale: 1, x:2000, y:-6000, z:-1000, "rotate-x" => "180", "rotate-y" => "270"}}
+    %h2 アプリ開発に思うこと
+    .content
+      %table.table.table-striped.table-hover
+        %tr
+          %td アプリ開発
+          %td
+            %ul
+              %li 楽しい。けど画面小さいのが難しい
+              %li 仕様変更とテストが辛い
+        %tr
+          %td アプリ申請
+          %td 
+            %ul
+              %li 精神修行としか思えん
+              %li 待ち時間が長い
+              %li スケジュールに組め込むのが難しい
+      %br
+      web開発は良いなぁ
+
+  #step-dev6-2.step.slide.active.present{data: {scale: 1, x:2000, y:-6000, z:-2000, "rotate-x" => "180", "rotate-y" => "270"}}
+    %h2 結論 それぞれの会社の良さ
+    .content
+      %table.table.table-striped.table-hover
+        %tr
+          %td 大手
+          %td 圧倒的品質
+        %tr
+          %td 中小
+          %td 技術力アップ。フロー改善
+        %tr
+          %td いま
+          %td 個人の裁量の大きさ
+        %tr
+          %td 小説
+          %td 予測不能のものができる楽しさ
+
+  #step-dev6-3.step.slide.active.present{data: {scale: 1, x:2000, y:-6000, z:-3000, "rotate-x" => "180", "rotate-y" => "270"}}
+    %h2 結論
+    .content
+      %table.table.table-striped.table-hover
+        %tr
+          %td それぞれのやり方に一長一短ある
+        %tr
+          %td 状況に応じて最前の方法を選ぶ事が大事
+      
+  #step-dev6-4.step.active.present{data: {scale: 5, x:0, y:0, z:4000, "rotate-z" => "90"}}
+    %h2 おしまい
+
+= javascript_include_tag "impress.js"
+:javascript
+  impress().init();

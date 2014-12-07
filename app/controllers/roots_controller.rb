@@ -1,12 +1,13 @@
 # encoding: utf-8
 class RootsController < ApplicationController
-
+  #before_filter :authenticate, only: [:study]
+   
   def index
   end
 
+  # 成分分析プログラム
   def bunseki
     @name = params[:name]
-
     if @name.present?
       @name = "文字列長すぎマン" if @name.length > 30
       per_list = []
@@ -32,7 +33,6 @@ class RootsController < ApplicationController
       @per_list.each_with_index do |per, i|
         graph_list.push [@seibun_list[i], per]
       end
-      Rails.logger.info graph_list
       @chart = LazyHighCharts::HighChart.new('pie') do |f|
         f.chart({defaultSeriesType: 'pie', margin: [50, 200, 60, 170]})
         f.series({
@@ -43,5 +43,17 @@ class RootsController < ApplicationController
       end
     end
   end
+
+  # 勉強会資料
+  def study
+    render 'study', layout: 'impress'
+  end
+
+  protected
+    def authenticate
+      authenticate_or_request_with_http_basic('Administration') do |username, password|
+        username == 'ike' && password == 'menmen'
+      end
+    end
 
 end

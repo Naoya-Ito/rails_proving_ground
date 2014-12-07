@@ -50,43 +50,43 @@ group :production do
 end
 
 group :doc do
-  gem 'sdoc', require: false
+#  gem 'sdoc', require: false
 end
 
 group :development, :test do
-  gem 'rspec'
-  gem 'rspec-rails'
+#  gem 'rspec'
+#  gem 'rspec-rails'
   gem 'haml-rails'
-  gem 'spork'
-  gem 'rb-fsevent'
-  gem 'guard'
-  gem 'guard-spork'
-  gem 'guard-rspec'
-  gem 'growl'
-  gem 'parallel_tests'
-  gem 'capistrano'
-  gem 'rvm-capistrano'
-  gem "capistrano_colors"
-  gem "capistrano-ext"
-  gem "simplecov", :require => false
-  gem "simplecov-rcov", :require => false
-  gem 'pry-rails'
-  gem 'webmock', :require => false
-  gem "database_cleaner"
-  gem 'i18n_generators'
-  gem 'ci_reporter', :require => false
-  gem "rails_best_practices", :require => false
-  gem 'foreman'
-  gem 'capybara'
-  gem 'capybara-webkit'
-  gem 'headless'
-  gem 'thin'
-  gem 'launchy'
-  gem 'hpricot'
-  gem 'sextant'
-  gem 'fuubar'
-  gem "gem-src"
-  gem 'binding_of_caller'
+#  gem 'spork'
+#  gem 'rb-fsevent'
+#  gem 'guard'
+#  gem 'guard-spork'
+#  gem 'guard-rspec'
+#  gem 'growl'
+#  gem 'parallel_tests'
+#  gem 'capistrano'
+#  gem 'rvm-capistrano'
+#  gem "capistrano_colors"
+#  gem "capistrano-ext"
+#  gem "simplecov", :require => false
+#  gem "simplecov-rcov", :require => false
+#  gem 'pry-rails'
+#  gem 'webmock', :require => false
+#  gem "database_cleaner"
+#  gem 'i18n_generators'
+#  gem 'ci_reporter', :require => false
+#  gem "rails_best_practices", :require => false
+#  gem 'foreman'
+#  gem 'capybara'
+#  gem 'capybara-webkit'
+#  gem 'headless'
+#  gem 'thin'
+#  gem 'launchy'
+#  gem 'hpricot'
+#  gem 'sextant'
+#  gem 'fuubar'
+#  gem "gem-src"
+#  gem 'binding_of_caller'
 end
 
 group :development do
@@ -99,14 +99,12 @@ end
 # gem 'debugger', group: [:development, :test]
 
 # omniouth
-=begin
-gem 'omniauth'
-gem 'omniauth-twitter'
-gem 'omniauth-facebook'
-gem 'omniauth-google-oauth2'
-gem 'omniauth-google'
-gem 'omniauth-openid'
-=end
+#gem 'omniauth'
+#gem 'omniauth-twitter'
+#gem 'omniauth-facebook'
+#gem 'omniauth-google-oauth2'
+#gem 'omniauth-google'
+#gem 'omniauth-openid'
 
 # seibun/  graph
 gem 'lazy_high_charts'

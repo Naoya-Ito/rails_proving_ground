@@ -62,3 +62,7 @@
         /        %a{:href => "#"} Separated link
     .container
       = yield
+    .footer_add
+      :javascript
+        var nend_params = {"media":27178,"site":141059,"spot":376019,"type":1,"oriented":1};
+      %script{ type: "text/javascript", src: "http://js1.nend.net/js/nendAdLoader.js" }

@@ -749,3 +749,10 @@ li {
 .img_border {
   border: 2px #ff0000 solid;
 }
+
+.top {
+  padding: 100px 0px 0px 20px;
+  text-align: center;
+  border-left-color: #cc6666; /* 左枠の色 */
+  font-size: 60px !important;
+}

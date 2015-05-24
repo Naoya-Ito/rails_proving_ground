@@ -1,6 +1,6 @@
 # encoding: utf-8
 class RootsController < ApplicationController
-  #before_filter :authenticate, only: [:study]
+  before_filter :authenticate, only: [:study, :work]
    
   def index
   end
@@ -47,6 +47,11 @@ class RootsController < ApplicationController
   # 勉強会資料
   def study
     render 'study', layout: 'impress'
+  end
+
+  # グループインタビュー資料
+  def work
+    render 'work', layout: 'impress'
   end
 
   protected

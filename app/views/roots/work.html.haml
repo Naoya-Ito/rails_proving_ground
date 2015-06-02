@@ -12,7 +12,6 @@
       %br
       %p{style: "text-align: center; padding: 10px"}
         = image_tag '/images/top_building.jpg'
-      %br
         
   #step-1.step.slide.active.present{data: {x:-4000, y:-2000, "rotate-x" => 75, "rotate-y" => 75, scale: 1}}
     %h2 発表の流れ
@@ -32,9 +31,8 @@
 
   / z: 8000 layer
   #step-o1.step.slide.active.present{data: {scale: 1, x:2000, y:2000, z:8000}}
-    %h2 2006/9 - 2011/9　Yahoo入社
+    %h2 2006/9 - 2011/9　大企業入社
     .content
-      = image_tag '/images/logo/y_logo.jpg', width: 170, height: 130
       %h3 志望動機
       %ul
         %li 色々できそう
@@ -58,7 +56,7 @@
         = image_tag '/images/people.jpg', width: 320, height: 250
       %br
       %ul
-        %li 天才が多い
+        %li 天才が多い(100人中1人の天才も、1万人取れば100人得られる)
         %li 社内技術が非常に充実
         %li 多くの人と出会える
 
@@ -158,7 +156,6 @@
       .top
         ベンチャー企業の場合
 
-
   / 5000 layer
   #step-w1.step.slide.active.present{data: {scale: 1, x:2000, y:5000, z:5000}}
     %h2 ベンチャー企業での仕事の進め方
@@ -167,14 +164,9 @@
         %li
           = link_to "アジャイル開発",  "http://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%B8%E3%83%A3%E3%82%A4%E3%83%AB%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA", target: "_blank"
           = link_to "https://www.google.co.jp/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=%E3%82%A2%E3%82%B8%E3%83%A3%E3%82%A4%E3%83%AB%20%E6%84%8F%E5%91%B3", target: "_blank" do
-            /= image_tag "/images/cat.png"
-            。
+            = image_tag "/images/cat.png"
         %li 最小人数のチーム構成
         %li 現場判断が多い
-        %br
-        %br
-        %br
-        = image_tag "/images/genba.jpg", width: 500, height: 260
                                                     
   / 0 layer
   #step-w2.step.slide.active.present{data: {scale: 1, x:4000, y:5000}}
@@ -208,14 +200,8 @@
         %li マニュアルなどない
         %li ルールや研修なども少ない
         %li 人が少ない
-      /%p{style: "text-align: right;"}
-      /  = image_tag "/images/ghost.png", width: 64, height: 64
-
-  /#step-g1.step.slide.active.present{data: {scale: 1, x:1000, y:3000}}
-  /#step-x1.step.slide.active.present{data: {scale: 1, x:1000, y:4000}}
-  /#step-x2.step.slide.active.present{data: {scale: 1, x:2000, y:4000, z:-1000, "rotate-y" => 90}}
-  /#step-x3.step.slide.active.present{data: {scale: 1, x:1000, y:4000, z:-2000, "rotate-y" => 180}}
-  /#step-x4.step.slide.active.present{data: {scale: 1, x:0, y:4000, z:-1000, "rotate-y" => 270}}
+      %p{style: "text-align: right;"}
+        = image_tag "/images/ghost.png", width: 64, height: 64
  
   #step-matome1.step.slide.active.present{data: {scale: 1, x:0, y:5000, z:3000, "rotate-y" => 90}}
     %h2 それぞれの特徴まとめ
@@ -237,29 +223,6 @@
           %td 会社の安定性
           %td 潰れはしない
           %td 変化は激しい
-
-  /#step-dev1-0.step.slide.active.present{data: {scale: 1, x:0, y:-1000, z:-1000, "rotate-x" => "270", "rotate-y" => "180"}}
-  /#step-dev1-1.step.slide.active.present{data: {scale: 1, x:0, y:-1000, z:-2000, "rotate-x" => "270", "rotate-y" => "180"}}
-  /#step-dev1-2.step.slide.active.present{data: {scale: 1, x:0, y:-1000, z:-3000, "rotate-x" => "270", "rotate-y" => "180"}}
-  /#step-dev1-3.step.slide.active.present{data: {scale: 1, x:0, y:-1000, z:-4000, "rotate-x" => "270", "rotate-y" => "180"}}
-  /#step-dev2-1.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-8000, "rotate-x" => "180", "rotate-y" => "90"}}
-  /#step-dev2-2.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-7000, "rotate-x" => "180", "rotate-y" => "90"}}
-  /#step-dev2-3.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-6000, "rotate-x" => "180", "rotate-y" => "90"}}
-  /#step-dev2-4.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-5000, "rotate-x" => "180", "rotate-y" => "90"}}
-  /#step-dev2-5.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-4000, "rotate-x" => "180", "rotate-y" => "90"}}
-  /#step-dev2-6.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-3000, "rotate-x" => "180", "rotate-y" => "90"}}
-  /#step-dev2-7.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-2000, "rotate-x" => "180", "rotate-y" => "90"}}
-  /#step-dev2-8.step.slide.active.present{data: {scale: 1, x:1000, y:-2000, z:-1000, "rotate-x" => "180", "rotate-y" => "90"}}
-  /#step-dev3-1.step.slide.active.present{data: {scale: 1, x:2000, y:-3000, z:-2000, "rotate-x" => "180", "rotate-y" => "180"}}
-  /#step-dev3-2.step.slide.active.present{data: {scale: 1, x:2000, y:-3000, z:-3000, "rotate-x" => "180", "rotate-y" => "180"}}
-  /#step-dev3-3.step.slide.active.present{data: {scale: 1, x:2000, y:-3000, z:-4000, "rotate-x" => "180", "rotate-y" => "180"}}
-  /#step-dev4-1.step.slide.active.present{data: {scale: 1, x:2000, y:-4000, z:-3000, "rotate-x" => "180", "rotate-y" => "270"}}
-  /#step-dev4-2.step.slide.active.present{data: {scale: 1, x:2000, y:-4000, z:-2000, "rotate-x" => "180", "rotate-y" => "270"}}
-  /#step-dev4-3.step.slide.active.present{data: {scale: 1, x:2000, y:-4000, z:-1000, "rotate-x" => "180", "rotate-y" => "270"}}
-  /#step-dev5-1.step.slide.active.present{data: {scale: 1, x:2000, y:-5000, z:-1000, "rotate-x" => "180", "rotate-y" => "270"}}
-  /#step-dev5-2.step.slide.active.present{data: {scale: 1, x:2000, y:-5000, z:-2000, "rotate-x" => "180", "rotate-y" => "270"}}
-  /#step-dev6-1.step.slide.active.present{data: {scale: 1, x:2000, y:-6000, z:-1000, "rotate-x" => "180", "rotate-y" => "270"}}
-  /#step-dev6-2.step.slide.active.present{data: {scale: 1, x:2000, y:-6000, z:-2000, "rotate-x" => "180", "rotate-y" => "270"}}
 
   #step-dev6-3.step.slide.active.present{data: {scale: 1, x:2000, y:-6000, z:-3000, "rotate-x" => "180", "rotate-y" => "270"}}
     %h2 結論

@@ -1,6 +1,6 @@
 # encoding: utf-8
 class RootsController < ApplicationController
-  before_filter :authenticate, only: [:study, :work]
+  #before_filter :authenticate, only: [:study, :work]
    
   def index
   end

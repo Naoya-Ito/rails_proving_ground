@@ -1,40 +1,46 @@
+= content_for :head do
+  = javascript_include_tag 'roots'
+
 %h2 作ったもの一覧
+
+%span.red ※ このページは Ruby on Rails で作られてます
 
 %table.table.table-striped.table-hover
   %thead
     %tr
-      %th タイトル
-      %th 備考
+      %th.center 成果物
+      %th.center 説明
   %tbody
     %tr
-      %td= link_to "iOSゲーム　『戦場の勇者』", "https://itunes.apple.com/jp/app/zhan-changno-yong-zhe/id913443123?mt=8", target: "blank"
+      %th.center= link_to "iOSアプリ　『戦場の勇者』", "https://itunes.apple.com/jp/app/zhan-changno-yong-zhe/id913443123?mt=8", target: "blank"
       %td
-        objective-c, sprintkit で実装。ファミコン『戦場の狼』が好きだったので作ったけど全然別物になった。
+        ファミコン『戦場の狼』をオマージュした作品ですが、完成品は全くの別物。
         %br
-        ※外部ページなので別ウィンドウ
+        = link_to '開発言語', '#', class: 'btn btn-xs btn-primary open-ios'
     %tr
-      %td= link_to "LINE スタンプ　『リア充に憧れるカッパ』", "https://store.line.me/stickershop/product/1109084/ja", target: "blank"
+      %th.center= link_to "シューティングゲーム", "https://www.youtube.com/watch?v=m1FQUBi3At8", :target => "blank"
       %td
-        LINEスタンプ作ってみた。2/5申請して承認されたのは5/5
-    %tr
-      %td= link_to "シューティングゲーム", "https://www.youtube.com/watch?v=m1FQUBi3At8", :target => "blank"
-      %td
-        jQueryを用いて作成したもの。youtubeにプレイ動画を投稿
+        youtubeにプレイ動画を公開中。
         %br
-        ※外部ページなので別ウィンドウ
-        /= image_tag "shooting.gif", :width => 50, :height => 50
+        = link_to '開発言語', '#', class: 'btn btn-xs btn-primary open-shoot'
     %tr
-      %td= link_to "会社の悪を暴くツール", bunseki_path
+      %th.center= link_to "会社の悪を暴くツール", bunseki_path
       %td
-        前職で遊びで作ったもの。railsで作成。グラフはhighcharts-railsで作成
+        前職で遊びで作ったもの。グラフはhighcharts-railsで作成。
+        %br
+        = link_to '開発言語', '#', class: 'btn btn-xs btn-primary open-bunseki'
     %tr
-      %td= link_to "githubアカウント", "https://github.com/InvokeTwoA", :target => "blank"
+      %th.center= link_to "LINE スタンプ　『リア充に憧れるカッパ』", "https://store.line.me/stickershop/product/1109084/ja", target: "blank"
       %td
-        ※外部ページなので別ウィンドウ
+        LINEスタンプ作って販売してみました。2/5申請して承認されたのは5/5。
     %tr
-      %td= link_to "グループインタビュー発表資料", work_path
+      %th.center= link_to "勉強会発表資料", work_path
       %td
-        大企業のメリデメ
+        大企業とベンチャー企業のメリデメについて発表しました。
+    %tr
+      %th.center= link_to "githubアカウント", "https://github.com/InvokeTwoA", :target => "blank"
+      %td
+        各種ソースコードは公開中です。
     /%tr
     /  %td= link_to "勉強会資料", study_path
     /  %td

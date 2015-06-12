@@ -25,6 +25,21 @@ module RailsProvingGround
     # compile
     config.assets.precompile += %w( impress.js impress.css )
 
+    require "find"
+    js_path = File.join(Rails.root, "app/assets/javascripts/")
+    Find.find(js_path).each do |f|
+      if f.match(/^(.*)\.coffee$/)
+        config.assets.precompile << $1.sub(js_path, "")
+      end
+    end
+
+    css_path = File.join(Rails.root, "app/assets/stylesheets/")
+    Find.find(css_path).each do |f|
+      if f.match(/^(.*)\.scss$/) || f.match(/^(.*)\.sass$/)
+        config.assets.precompile << $1.sub(css_path, "")
+      end
+    end
+
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de

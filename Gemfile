@@ -28,7 +28,7 @@ gem 'kaminari'
 
 gem "therubyracer"
 gem 'less-rails'
-gem 'twitter-bootswatch-rails'
+gem 'twitter-bootswatch-rails', '3.2.0'
 gem 'twitter-bootswatch-rails-helpers'
 
 #gem "fog"

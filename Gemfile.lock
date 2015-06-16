@@ -84,6 +84,8 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    meta-tags (2.0.0)
+      actionpack (>= 3.0.0)
     mime-types (1.25.1)
     mini_portile (0.5.3)
     minitest (4.7.5)
@@ -168,6 +170,7 @@ DEPENDENCIES
   kaminari
   lazy_high_charts
   less-rails
+  meta-tags
   nokogiri (= 1.6.0)
   rails (= 4.0.2)
   rails_12factor

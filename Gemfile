@@ -109,4 +109,5 @@ end
 # seibun/  graph
 gem 'lazy_high_charts'
 
+gem 'meta-tags'
 

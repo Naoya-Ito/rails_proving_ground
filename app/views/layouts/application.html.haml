@@ -8,6 +8,9 @@
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
+    - set_meta_tags description: 'カッパのポートフォリオ'
+    - set_meta_tags keywords: 'カッパのポートフォリオ'
+    - set_meta_tags open_graph: { title: 'カッパのポートフォリオ' }
     /[if lt IE 9]
       = javascript_include_tag "http://html5shim.googlecode.com/svn/trunk/html5.js"
     = yield :head
@@ -21,8 +24,8 @@
         %a.navbar-brand{:href => root_path} カッパのポートフォリオ
       .navbar-collapse.collapse.navbar-responsive-collapse
         %ul.nav.navbar-nav
-          /%li.active
-          /  %a{:href => "#"} Active
+          %li.active
+            %a{:href => root_path} 成果物一覧
           /%li
           /  %a{:href => "#"} Link
           /%li.dropdown
@@ -67,4 +70,4 @@
       = render "/commons/google_analytics"
       :javascript
         var nend_params = {"media":27178,"site":141059,"spot":376019,"type":1,"oriented":1};
-      %script{ type: "text/javascript", src: "http://js1.nend.net/js/nendAdLoader.js" }
+      %script{ type: "text/javascript", src: "https://js1.nend.net/js/nendAdLoader.js" }
